@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+
+        <table>
+            <tr>
+                <th>Game</th>
+                <th>Developer</th>
+                <th>Release Year</th>
+                <th>Genre</th>
+            </tr>
+
+            <tr>
+                <td>Minecraft</td>
+                <td>Mojang Studios</td>
+                <td>2011</td>
+                <td>Sandbox</td>
+            </tr>
+            <tr>
+                <td>Fortnite</td>
+                <td>Epic Games</td>
+                <td>2017</td>
+                <td>Battle Royale</td>
+            </tr>
+            <tr>
+                <td>GTA V</td>
+                <td>Rockstar Games</td>
+                <td>2013</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td>Counter-Strike 2</td>
+                <td>Valve</td>
+                <td>2023</td>
+                <td>Tactical first-person shooter</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <form>
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+
+            <br><br>
+
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <br><br>
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+
+            <br><br>
+
+            <p>Favorite Gaming Platform:</p>
+
+            <input type="radio" id="pc" name="platform" value="PC">
+            <label for="pc">PC</label>
+
+            <input type="radio" id="playstation" name="platform" value="PlayStation">
+            <label for="playstation">PlayStation</label>
+
+            <input type="radio" id="xbox" name="platform" value="Xbox">
+            <label for="xbox">Xbox</label>
+
+            <br><br>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to newsletter</label>
+
+            <br><br>
+
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" maxlength="500"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+
+    <footer>
+        <p>&copy; Video Games </p>
+    </footer>
+    
+</body>
+</html>
