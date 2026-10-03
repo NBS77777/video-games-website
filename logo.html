@@ -1,201 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Zone</title>
+
+    <title>Game Zone - Components</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+
     <header>
-        <nav class="navbar">
 
-            <div class="logo">
-                Game Zone
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="logo.html" class="active">Components</a>
-                <a href="task3.html">Articles</a>
-            </div>
+            <div class="container">
 
-            <div class="nav-buttons">
-                <button>Login</button>
-                <button>Sign Up</button>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Game Zone
+                </a>
+
+                <!-- Mobile menu button -->
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+
+                        <a class="nav-link active" href="logo.html">
+                            Components
+                        </a>
+
+                        <a class="nav-link" href="task3.html">
+                            Articles
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </nav>
+
     </header>
+
 
     <main>
 
-        <h1>Component Library</h1>
+        <div class="container py-5">
 
-        <section>
-            <h2>Popular Games</h2>
+            <h1 class="text-center mb-5">
+                Component Library
+            </h1>
 
-            <div class="cards">
 
-                <div class="card">
-                    <h3>Counter-Strike 2</h3>
-                    <img src="images/cs2.jpg" alt="Counter-Strike 2">
+            <section class="mb-5">
 
-                    <p>
-                        Competitive tactical shooter.
-                    </p>
+                <h2 class="mb-4">
+                    Popular Games
+                </h2>
 
-                    <a href="https://www.counter-strike.net/cs2" class="read-more">
-                        Read More
-                    </a>
-                </div>
+                <div class="game-cards">
 
-                <div class="card">
-                    <h3>Minecraft</h3>
-                    <img src="images/minecraft.jpg" alt="Minecraft">
+                    <div class="game-card">
 
-                    <p>
-                        Sandbox game with building, exploration and survival.
-                    </p>
+                        <h3>Counter-Strike 2</h3>
 
-                    <a href="https://www.minecraft.net/ru-ru" class="read-more">
-                        Read More
-                    </a>
-                </div>
+                        <img
+                            src="images/cs2.jpg"
+                            alt="Counter-Strike 2">
 
-                <div class="card">
-                    <h3>Fortnite</h3>
-                    <img src="images/Fortnite.jpg" alt="Fortnite">
+                        <p>
+                            Competitive tactical shooter.
+                        </p>
 
-                    <p>
-                        Battle royale game with building mechanics and different game modes.
-                    </p>
+                        <a
+                            href="https://www.counter-strike.net/cs2"
+                            class="read-more">
 
-                    <a href="https://www.fortnite.com/?lang=ru" class="read-more">
-                        Read More
-                    </a>
-                </div>
+                            Read More
 
-            </div>
-        </section>
+                        </a>
 
-        <section>
-            <h2>Pagination</h2>
+                    </div>
 
-            <div class="pagination">
 
-                <button>←</button>
+                    <div class="game-card">
 
-                <div class="page-numbers">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                </div>
+                        <h3>Minecraft</h3>
 
-                <button>→</button>
+                        <img
+                            src="images/minecraft.jpg"
+                            alt="Minecraft">
 
-                <span class="result-count">12 results</span>
+                        <p>
+                            Sandbox game with building,
+                            exploration and survival.
+                        </p>
 
-            </div>
-        </section>
+                        <a
+                            href="https://www.minecraft.net/ru-ru"
+                            class="read-more">
 
-        <section>
-            <h2>Comment</h2>
+                            Read More
 
-            <div class="comment">
+                        </a>
 
-                <img src="images/avatar.jpg" alt="User avatar">
+                    </div>
 
-                <div class="comment-content">
 
-                    <h3>John Smith</h3>
+                    <div class="game-card">
 
-                    <p>
-                        I really enjoy playing video games.
-                        This is a longer comment to test how the text
-                        wraps beside the avatar without moving under it.
-                    </p>
+                        <h3>Fortnite</h3>
+
+                        <img
+                            src="images/Fortnite.jpg"
+                            alt="Fortnite">
+
+                        <p>
+                            Battle royale game with building
+                            mechanics and different game modes.
+                        </p>
+
+                        <a
+                            href="https://www.fortnite.com/?lang=ru"
+                            class="read-more">
+
+                            Read More
+
+                        </a>
+
+                    </div>
 
                 </div>
 
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Pricing Plans</h2>
+            <section class="mb-5">
 
-            <div class="pricing">
+                <h2 class="mb-4">
+                    Pagination
+                </h2>
 
-                <div class="plan">
+                <div class="d-flex flex-wrap align-items-center gap-2">
 
-                    <h3>Basic</h3>
-
-                    <p class="price">$5</p>
-
-                    <p>
-                        For casual gamers.
-                    </p>
-
-                    <button>
-                        Choose Plan
+                    <button class="btn btn-secondary">
+                        ←
                     </button>
 
-                </div>
+                    <div class="d-flex gap-1">
 
-                <div class="plan recommended">
+                        <a href="#" class="btn btn-outline-primary">
+                            1
+                        </a>
 
-                    <h3>Recommended</h3>
+                        <a href="#" class="btn btn-outline-primary">
+                            2
+                        </a>
 
-                    <p class="price">$10</p>
+                        <a href="#" class="btn btn-outline-primary">
+                            3
+                        </a>
 
-                    <p>
-                        For regular gamers.
-                    </p>
+                        <a href="#" class="btn btn-outline-primary">
+                            4
+                        </a>
 
-                    <p>
-                        More features included.
-                    </p>
+                        <a href="#" class="btn btn-outline-primary">
+                            5
+                        </a>
 
-                    <p>
-                        Priority support.
-                    </p>
+                    </div>
 
-                    <button>
-                        Choose Plan
+                    <button class="btn btn-secondary">
+                        →
                     </button>
 
-                </div>
-
-                <div class="plan">
-
-                    <h3>Pro</h3>
-
-                    <p class="price">$20</p>
-
-                    <p>
-                        For serious gamers.
-                    </p>
-
-                    <button>
-                        Choose Plan
-                    </button>
+                    <span class="text-muted ms-2">
+                        12 results
+                    </span>
 
                 </div>
 
-            </div>
-        </section>
+            </section>
+
+            <section class="mb-5">
+
+                <h2 class="mb-4">
+                    Comment
+                </h2>
+
+                <div class="d-flex gap-3 align-items-start">
+
+                    <img
+                        src="images/avatar.jpg"
+                        alt="User avatar"
+                        width="70"
+                        height="70"
+                        class="rounded-circle">
+
+                    <div>
+
+                        <h3 class="h5">
+                            John Smith
+                        </h3>
+
+                        <p>
+                            I really enjoy playing video games.
+                            This is a longer comment to test how
+                            the text wraps beside the avatar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="mb-5">
+
+                <h2 class="mb-4">
+                    Pricing Plans
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-100 text-center">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    Basic
+                                </h3>
+
+                                <p class="display-6">
+                                    $5
+                                </p>
+
+                                <p>
+                                    For casual gamers.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Choose Plan
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-100 text-center border-primary">
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-primary mb-2">
+                                    Recommended
+                                </span>
+
+                                <h3 class="card-title">
+                                    Recommended
+                                </h3>
+
+                                <p class="display-6">
+                                    $10
+                                </p>
+
+                                <p>
+                                    For regular gamers.
+                                </p>
+
+                                <p>
+                                    More features included.
+                                </p>
+
+                                <p>
+                                    Priority support.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Choose Plan
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-100 text-center">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    Pro
+                                </h3>
+
+                                <p class="display-6">
+                                    $20
+                                </p>
+
+                                <p>
+                                    For serious gamers.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Choose Plan
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Game Zone</p>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white text-center py-3">
+
+        <p class="mb-0">
+            &copy; 2026 Game Zone
+        </p>
+
     </footer>
 
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </body>
+
 </html>

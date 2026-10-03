@@ -1,135 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
 
-            <div class="logo">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
                 Game Zone
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <div class="navbar-nav ms-auto">
+
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link active">
+                        Contact
+                    </a>
+
+                    <a href="logo.html" class="nav-link">
+                        Components
+                    </a>
+
+                    <a href="task3.html" class="nav-link">
+                        Articles
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="active">Contact</a>
-                <a href="logo.html">Components</a>
-                <a href="task3.html">Articles</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <h1 class="mb-4">
+                Contact
+            </h1>
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-striped">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>Game</th>
+                            <th>Developer</th>
+                            <th>Release Year</th>
+                            <th>Genre</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Minecraft</td>
+                            <td>Mojang Studios</td>
+                            <td>2011</td>
+                            <td>Sandbox</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fortnite</td>
+                            <td>Epic Games</td>
+                            <td>2017</td>
+                            <td>Battle Royale</td>
+                        </tr>
+
+                        <tr>
+                            <td>GTA V</td>
+                            <td>Rockstar Games</td>
+                            <td>2013</td>
+                            <td>Action</td>
+                        </tr>
+
+                        <tr>
+                            <td>Counter-Strike 2</td>
+                            <td>Valve</td>
+                            <td>2023</td>
+                            <td>Tactical first-person shooter</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
             </div>
 
-            <div class="nav-buttons">
-                <button>Login</button>
-                <button>Sign Up</button>
+        </div>
+
+    </section>
+
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-10 col-lg-8">
+
+                    <form>
+
+                        <fieldset class="border rounded p-4 bg-white">
+
+                            <legend class="float-none w-auto px-2">
+                                Contact Form
+                            </legend>
+
+                            <div class="mb-3">
+
+                                <label for="name" class="form-label">
+                                    Name:
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label for="email" class="form-label">
+                                    Email:
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label for="age" class="form-label">
+                                    Age:
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    name="age"
+                                    min="1"
+                                    max="100"
+                                    class="form-control">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label for="birthdate" class="form-label">
+                                    Birth Date:
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="birthdate"
+                                    name="birthdate"
+                                    class="form-control">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label for="color" class="form-label">
+                                    Favorite Color:
+                                </label>
+
+                                <input
+                                    type="color"
+                                    id="color"
+                                    name="color"
+                                    class="form-control form-control-color">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <p class="mb-2">
+                                    Favorite Gaming Platform:
+                                </p>
+
+                                <div class="form-check">
+
+                                    <input
+                                        type="radio"
+                                        id="pc"
+                                        name="platform"
+                                        value="PC"
+                                        class="form-check-input">
+
+                                    <label for="pc" class="form-check-label">
+                                        PC
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check">
+
+                                    <input
+                                        type="radio"
+                                        id="playstation"
+                                        name="platform"
+                                        value="PlayStation"
+                                        class="form-check-input">
+
+                                    <label for="playstation" class="form-check-label">
+                                        PlayStation
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check">
+
+                                    <input
+                                        type="radio"
+                                        id="xbox"
+                                        name="platform"
+                                        value="Xbox"
+                                        class="form-check-input">
+
+                                    <label for="xbox" class="form-check-label">
+                                        Xbox
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-check mb-3">
+
+                                <input
+                                    type="checkbox"
+                                    id="newsletter"
+                                    name="newsletter"
+                                    class="form-check-input">
+
+                                <label for="newsletter" class="form-check-label">
+                                    Subscribe to newsletter
+                                </label>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label for="message" class="form-label">
+                                    Message:
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    maxlength="500"
+                                    rows="5"
+                                    class="form-control"></textarea>
+
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
             </div>
 
-        </nav>
-    </header>
+        </div>
 
-    <main>
-        <h1>Contact</h1>
+    </section>
 
-        <table>
-            <tr>
-                <th>Game</th>
-                <th>Developer</th>
-                <th>Release Year</th>
-                <th>Genre</th>
-            </tr>
+</main>
 
-            <tr>
-                <td>Minecraft</td>
-                <td>Mojang Studios</td>
-                <td>2011</td>
-                <td>Sandbox</td>
-            </tr>
-            <tr>
-                <td>Fortnite</td>
-                <td>Epic Games</td>
-                <td>2017</td>
-                <td>Battle Royale</td>
-            </tr>
-            <tr>
-                <td>GTA V</td>
-                <td>Rockstar Games</td>
-                <td>2013</td>
-                <td>Action</td>
-            </tr>
-            <tr>
-                <td>Counter-Strike 2</td>
-                <td>Valve</td>
-                <td>2023</td>
-                <td>Tactical first-person shooter</td>
-            </tr>
+<footer class="bg-dark text-white text-center py-3">
 
-        </table>
-    </main>
+    <p class="mb-0">
+        &copy; 2026 Video Games
+    </p>
 
-    <form>
-        <fieldset>
-            <legend>Contact Form</legend>
+</footer>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-            <br><br>
-
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" max="100">
-
-            <br><br>
-
-            <label for="birthdate">Birth Date:</label>
-            <input type="date" id="birthdate" name="birthdate">
-
-            <br><br>
-
-            <label for="color">Favorite Color:</label>
-            <input type="color" id="color" name="color">
-
-            <br><br>
-
-            <p>Favorite Gaming Platform:</p>
-
-            <input type="radio" id="pc" name="platform" value="PC">
-            <label for="pc">PC</label>
-
-            <input type="radio" id="playstation" name="platform" value="PlayStation">
-            <label for="playstation">PlayStation</label>
-
-            <input type="radio" id="xbox" name="platform" value="Xbox">
-            <label for="xbox">Xbox</label>
-
-            <br><br>
-
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Subscribe to newsletter</label>
-
-            <br><br>
-
-            <label for="message">Message:</label>
-            <br>
-            <textarea id="message" name="message" maxlength="500"></textarea>
-
-            <br><br>
-
-            <input type="submit" value="Submit">
-
-        </fieldset>
-
-    </form>
-
-    <footer>
-        <p>&copy; Video Games </p>
-    </footer>
-    
 </body>
 </html>

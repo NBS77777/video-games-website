@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game Zone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">Game Zone</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#games">Games</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+
+                <h1 class="display-4 fw-bold">
+                    Welcome to Game Zone
+                </h1>
+
+                <p class="lead">
+                    Discover popular games, explore new worlds
+                    and find your next favorite game.
+                </p>
+
+                <a href="#games" class="btn btn-primary btn-lg">
+                    Explore Games
+                </a>
+
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+
+                <div class="game-icon">
+                    🎮
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= TASK 1 ================= -->
+
+<section id="games" class="games-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Popular Games</h2>
+            <p class="text-muted">
+                Task 1 — Responsive section using my own CSS
+            </p>
+        </div>
+
+        <!--
+            This section uses only my own CSS.
+            Bootstrap col-* classes are NOT used here.
+        -->
+
+        <div class="game-grid">
+
+            <div class="game-card">
+                <div class="game-image">⚔️</div>
+                <h3>Dark Souls</h3>
+                <p>Action RPG with challenging battles.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image">⛏️</div>
+                <h3>Minecraft</h3>
+                <p>Build, explore and create your own world.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image">🔫</div>
+                <h3>Counter-Strike 2</h3>
+                <p>Competitive tactical FPS game.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image">🏎️</div>
+                <h3>Forza Horizon</h3>
+                <p>Open-world racing experience.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image">🧟</div>
+                <h3>Resident Evil</h3>
+                <p>Survive dangerous enemies and mysteries.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image">🧙</div>
+                <h3>The Witcher</h3>
+                <p>Explore a fantasy world full of adventures.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about-section py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- More important content appears first on mobile -->
+            <div class="col-md-6 order-1 order-md-1">
+
+                <h2>About Game Zone</h2>
+
+                <p>
+                    Game Zone is a simple website for people
+                    who enjoy video games and gaming culture.
+                </p>
+
+                <p>
+                    Our goal is to help gamers discover
+                    interesting games and explore different genres.
+                </p>
+
+                <!-- Hidden on phones -->
+                <div class="d-none d-md-block">
+                    <p class="text-primary fw-bold">
+                        Available on desktop and tablet screens.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 order-2 order-md-2 text-center">
+
+                <div class="about-icon">
+                    🕹️
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED GAMES ================= -->
+
+<section class="featured-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2>Featured Games</h2>
+            <p class="text-muted">
+                Bootstrap Grid and Cards
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Cyberpunk 2077</h5>
+
+                        <p class="card-text">
+                            Explore Night City in a futuristic
+                            open-world RPG.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#gameModal">
+                            Details
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Theft Auto V</h5>
+
+                        <p class="card-text">
+                            Explore a large open world and
+                            complete different missions.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#gameModal">
+                            Details
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Elden Ring</h5>
+
+                        <p class="card-text">
+                            Discover a huge fantasy world
+                            with difficult battles.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#gameModal">
+                            Details
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section py-5 bg-dark text-white">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+
+                <h2>Contact Us</h2>
+
+                <p>
+                    Have a question about games?
+                    Send us a message.
+                </p>
+
+            </div>
+
+
+            <div class="col-12 col-md-6">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control"
+                                  rows="4"
+                                  placeholder="Your message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal fade" id="gameModal" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Game Information
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                This is a featured game.
+                More information can be added later.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-black text-white text-center p-3">
+
+    <p class="mb-0">
+        © 2026 Game Zone
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

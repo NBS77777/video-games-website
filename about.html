@@ -3,79 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>About</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
 
-            <div class="logo">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
                 Game Zone
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <div class="navbar-nav ms-auto">
+
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+
+                    <a href="about.html" class="nav-link active">
+                        About
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+
+                    <a href="logo.html" class="nav-link">
+                        Components
+                    </a>
+
+                    <a href="task3.html" class="nav-link">
+                        Articles
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="logo.html">Components</a>
-                <a href="task3.html">Articles</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-md-6 order-1">
+
+                    <h1>About Minecraft</h1>
+
+                    <p>
+                        Minecraft is a critically acclaimed sandbox video game
+                        developed by Mojang Studios and originally created by
+                        Markus "Notch" Persson. First released in 2011, it has
+                        become one of the best-selling video games in history.
+                    </p>
+
+                    <ol>
+                        <li>2009 — Minecraft development began</li>
+                        <li>2011 — Official release</li>
+                        <li>2014 — Microsoft acquired Mojang</li>
+                        <li>2021 — Minecraft celebrated its 10th anniversary</li>
+                    </ol>
+
+                </div>
+
+                <div class="col-12 col-md-6 order-2 text-center">
+
+                    <figure>
+                        <img
+                            src="images/minecraft.jpg"
+                            alt="Minecraft image"
+                            class="img-fluid rounded">
+
+                        <figcaption class="mt-2">
+                            Minecraft is a sandbox game where players can build and explore.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
             </div>
 
-            <div class="nav-buttons">
-                <button>Login</button>
-                <button>Sign Up</button>
+        </div>
+
+    </section>
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6">
+
+                    <ul>
+                        <li>Minecraft is a sandbox game.</li>
+                        <li>Players can build structures.</li>
+                        <li>The game has Survival and Creative modes.</li>
+                        <li>Minecraft has multiplayer features.</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <blockquote>
+                        "Minecraft is a game about placing blocks and going on adventures."
+                        — Mojang Studios
+                    </blockquote>
+
+                    <p>
+                        Minecraft gives players
+                        <strong>creative freedom</strong>
+                        to build and explore.
+                    </p>
+
+                </div>
+
             </div>
 
-        </nav>
-    </header>
+        </div>
 
-    <main>
-        <h1>About Minecraft</h1> 
+    </section>
 
-        <p>Minecraft is a critically acclaimed sandbox video game developed by Mojang Studios and originally created by Markus "Notch" Persson. First released in 2011, it has become the best-selling video game in history, with hundreds of millions of copies sold across multiple platforms.</p>
-    </main>
+    <section class="py-5">
 
-    <ol>
-        <li>2009 — Minecraft development began</li>
-        <li>2011 — Official release</li>
-        <li>2014 — Microsoft acquired Mojang</li>
-        <li>2021 — Minecraft celebrated its 10th anniversary</li>
-    </ol>
+        <div class="container">
 
-    <ul>
-        <li>Minecraft is a sandbox game.</li>
-        <li>Players can build structures.</li>
-        <li>The game has Survival and Creative modes.</li>
-        <li>Minecraft has multiplayer features.</li>
-    </ul>
+            <h2>Minecraft Video</h2>
 
-    <figure>
-        <img src="images/minecraft.jpg" alt="Minecraft image">
-        <figcaption>Minecraft is a sandbox game where players can build and explore.</figcaption>
-    </figure>
+            <p>
+                Watch a short video about Minecraft:
+            </p>
 
-    <blockquote>"Minecraft is a game about placing blocks and going on adventures."— Mojang Studios</blockquote>
-    
-    <p>Minecraft gives players <strong>creative freedom</strong> to build and explore.</p>
+            <div class="ratio ratio-16x9">
 
-    <h2>Minecraft Video</h2>
+                <iframe
+                    src="https://www.youtube.com/embed/MmB9b5njVbA"
+                    title="Minecraft Trailer"
+                    allowfullscreen>
+                </iframe>
 
-    <p>Watch a short video about Minecraft:</p>
-    
-    <iframe 
-        width="500" 
-        height="300" 
-        src="https://www.youtube.com/embed/MmB9b5njVbA"
-        title="Minecraft Trailer"
-        allowfullscreen>
-    </iframe>
+            </div>
 
-    <footer>
-        <a href="https://www.minecraft.net/" target="_blank" rel="noopener">
-            Official Minecraft Website
-        </a>
-    </footer>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+
+    <a
+        href="https://www.minecraft.net/"
+        target="_blank"
+        rel="noopener"
+        class="text-white">
+
+        Official Minecraft Website
+
+    </a>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
